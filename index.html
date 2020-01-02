@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>restaurant</title>
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+	<div class="hero">
+		<nav class="nav-bar">
+			<nav class="nav-logo">
+				<h2>Resturant</h2>
+			</nav>
+			<nav class="nav-link" id="nav-link">
+				<i class="fa fa-close" onclick="closeMenu()"></i>
+				<ul>
+					<a href=""><li>Home</li></a>
+					<a href=""><li>About</li></a>
+					<a href=""><li>Recipe</li></a>
+				</ul>
+				<button type="button" class="btn">SIGN UP</button>
+			</nav>
+			<i class="fa fa-bars" onclick="showMenu()"></i>
+		</nav>
+		<div class="banner-title">
+			<h1>Where <span>taste</span><br>meets the <span>myth</span></h1>
+			<button type="button" class="btn">Explore</button>
+		</div>
+		<div class="vertical-bar">
+			<div class="search-icon">
+				<i class="fa fa-th-list"></i>
+				<i class="fa fa-search"></i>
+			</div>
+			<div class="social-icon">
+				<i class="fa fa-facebook"></i>
+				<i class="fa fa-instagram"></i>
+				<i class="fa fa-twitter"></i>
+				<i class="fa fa-pinterest"></i>
+			</div>
+		</div>
+		<div class="notification">
+			<div class="content">
+				<small>Lorem ipsum dolor sit amet, quidem laboriosam magnam. accusamus sint? expedita labore necessitatibus voluptates eius quidem eaque.</small>
+				<p><a href="">PREV</a><a href="">NEXT</a></p>
+			</div>
+			<div class="notification-img">
+				<img src="notif.jpg" alt="Food">
+			</div>
+		</div>
+	</div>
+
+	<script>
+		let show = document.getElementById('nav-link');
+		function showMenu() {
+			show.style.right = "0";
+		}
+		function closeMenu() {
+			show.style.right = "-200px";
+		}
+	</script>
+</body>
+</html>
